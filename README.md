@@ -99,9 +99,9 @@ The application comes with pre-configured sample data:
 | Role | Username | Password |
 |------|----------|----------|
 | **Admin** | `admin` | `admin123` |
-| **Doctor** | `dr.smith` | `doctor123` |
-| **Patient** | `john.doe` | `patient123` |
-| **Pharmacy** | `pharmacy.main` | `pharmacy123` |
+| **Doctor** | `dr.patel` | `doctor123` |
+| **Patient** | `priya.singh` | `patient123` |
+| **Pharmacy** | `pharmacy.siddhi` | `pharmacy123` |
 
 ## 📁 Project Structure
 
@@ -180,14 +180,6 @@ mvn spring-boot:run
 ```bash
 mvn clean package
 java -jar target/clinic-on-click-0.0.1-SNAPSHOT.jar
-```
-
-### Docker (Optional)
-```dockerfile
-FROM openjdk:17-jdk-slim
-COPY target/clinic-on-click-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 
 ## 🧪 Testing
